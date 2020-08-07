@@ -9,12 +9,7 @@
 <body>
 	<H1>User data recording</H1>
 	<?php 
-	//Set DB configuration
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "ingeteam_prueba";
-
+	include 'db_connnection.php';
 	//Data integrity flag
 	$clear = true;
 	//Check data
@@ -80,9 +75,7 @@
 	  }
 	  if ($clear) {
 	  	try {
-		    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-		    // set the PDO error mode to exception
-		    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		    $conn = OpenCon();
 		    //Insert user data
 		  	$sql = "INSERT INTO TB_USER_DATA(USER_NAME, EMAIL, DESCRIPTION, ADDRESS, POSTAL_CODE) 
 		  	    VALUES ('".$formData['name']."', '".$formData['email']."', '".$formData['description']."', '".$formData['address']."', '".$formData['postalCode']."')";
