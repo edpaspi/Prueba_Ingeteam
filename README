@@ -1,0 +1,24 @@
+# Contenido del proyecto:
+
+ - ingeteam_prueba.sql: Fichero para importación de la base de datos en MySQL
+ - index.php: Fichero con la página principal del programa
+ - action.php: Fichero con la informacion de la página para listar 
+
+## Requisitos:
+ - Tener instalado XAMPP en el equipo.
+
+## Instalacion
+
+ - Arranca los servicios de Apache y MySQL
+ - En la [ruta de instalación de XAMPP]/htdocs crear la carpeta "Prueba_PHP" y copiar los archivos en ella.
+ - En el administrador de MySQL, cree una nueva base de datos con nombre ingeteam_prueba
+ - Importa los datos del archivo ingeteam_prueba.sql
+ - Modificar de ser necesario los datos de conexión a la BBDD en los archivos PHP para que se adecúen a los del servidor.
+
+## Uso
+
+ - Acceder a https://localhost/Prueba_PHP/index.php
+ - Introducir los datos de Usuario
+ - Si son correctos, se añadirán a la BBDD
+ - Si contienen fallos, se descartarán los datos
+ - Al pulsar en el botón "List User Data", se redirigirá a un listado de los datos contenidos en la base de datos.
