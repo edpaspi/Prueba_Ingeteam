@@ -7,6 +7,7 @@
 	</style>
 </head>
 <body>
+	<H1>User data recording</H1>
 	<?php 
 	//Set DB configuration
 	$servername = "localhost";
@@ -74,7 +75,6 @@
 	  //Check if there are errors
 	  foreach ($formErrors as $field => $des) {
 	  	if (!empty($des)) {
-	  		echo "Hay errores";
 	  		$clear = false;
 	  	}
 	  }
