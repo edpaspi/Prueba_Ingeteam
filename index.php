@@ -8,7 +8,7 @@
 </head>
 <body>
 	<?php 
-	//
+	//Set DB configuration
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
