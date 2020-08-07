@@ -47,5 +47,10 @@
 		$conn = null;
 	?>
 	</p>
+	<p>
+		<form action="index.php">
+            		<input type="submit" name="Back" value="Back to index" />
+    		</form>
+	</p>
 </body>
 </html> 
